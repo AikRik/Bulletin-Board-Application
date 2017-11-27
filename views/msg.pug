@@ -1,0 +1,15 @@
+html
+	body
+		a(href="/") Home
+		<br/>
+		a(href="searchbar") Search User Messages
+	<br/ >
+
+		h2 Your specified Messages:
+		p #{firstname}
+		p #{lastname}
+		p #{email}
+		p
+			each item in match
+				each value, key in item
+					p #{key}: #{value}
